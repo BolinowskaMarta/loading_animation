@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation</title>
+    <style>
+
+        .wrapper{
+            margin: 30vh auto;
+            text-align: center;
+            font-size: 1.2em;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+        .loader{
+            width:60px;
+            height:60px;
+            margin:30px auto;
+            border: 10px solid;
+            border-radius: 50%;
+            border-color: rgb(0, 0, 0) rgb(185, 243, 49);
+            animation: 2s turn infinite;
+        }
+
+        @keyframes turn {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2><b>Loading animation</b></h2>
+    <div class="loader"></div>
+</div>
+
+</body>
+</html>
